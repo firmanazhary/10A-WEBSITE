@@ -30,7 +30,7 @@ export default function ProfileSection() {
               transition={{ delay: index * 0.1, duration: 0.5 }}
               viewport={{ once: true }}
               whileHover={{ y: -10 }}
-              className="flex flex-col justify-between bg-gray-800 shadow-xl hover:shadow-2xl rounded-xl overflow-hidden transition-all">
+              className="flex flex-col justify-start bg-gray-800 shadow-xl hover:shadow-2xl rounded-xl overflow-hidden transition-all">
               <div className="relative h-48">
                 <img
                   src={student.photo}
@@ -46,11 +46,11 @@ export default function ProfileSection() {
                   {student.status}
                 </p>
               </div>
-              <div className="flex flex-col justify-between p-4">
+              <div className="flex flex-col justify-between p-4 h-[calc(100%-192px)]">
                 <h3 className="mb-1 font-bold text-white text-xl line-clamp-1">
                   {student.name}
                 </h3>
-                <p className="mb-3 text-gray-400 text-sm line-clamp-2">
+                <p className="mb-3 text-gray-400 text-sm line-clamp-3">
                   {student.quote}
                 </p>
                 <div className="flex space-x-2 mb-3">
