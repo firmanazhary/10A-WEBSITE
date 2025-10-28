@@ -1,4 +1,3 @@
-
 // src/components/ProfileSection.jsx
 import { motion } from "framer-motion";
 import { useEffect } from "react";
@@ -11,19 +10,18 @@ export default function ProfileSection() {
   }, []);
 
   return (
-    <motion.section id="profiles" className="py-20 px-4 bg-gray-900">
-      <div className="max-w-6xl mx-auto">
+    <motion.section id="profiles" className="bg-gray-900 px-4 py-20">
+      <div className="mx-auto max-w-6xl">
         <motion.h2
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
-          className="text-3xl font-bold text-center text-white mb-12"
-        >
-          Kelas X Abudzar
+          className="mb-12 font-bold text-white text-3xl text-center">
+          Jelajah Santri
         </motion.h2>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+        <div className="gap-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
           {studentsData.map((student, index) => (
             <motion.div
               key={student.id}
@@ -32,35 +30,42 @@ export default function ProfileSection() {
               transition={{ delay: index * 0.1, duration: 0.5 }}
               viewport={{ once: true }}
               whileHover={{ y: -10 }}
-              className="bg-gray-800 rounded-xl overflow-hidden shadow-xl hover:shadow-2xl transition-all"
-            >
+              className="flex flex-col justify-between bg-gray-800 shadow-xl hover:shadow-2xl rounded-xl overflow-hidden transition-all">
               <div className="relative h-48">
                 <img
                   src={student.photo}
                   alt={student.name}
                   className="w-full h-full object-cover"
                 />
+                <p
+                  className={`${
+                    student.status == "osis"
+                      ? "bg-teal-950 text-white py-1 px-4 rounded-r-full top-3 left-0 absolute"
+                      : "hidden"
+                  }`}>
+                  {student.status}
+                </p>
               </div>
-              <div className="p-4">
-                <h3 className="text-xl font-bold text-white mb-1">
+              <div className="flex flex-col justify-between p-4">
+                <h3 className="mb-1 font-bold text-white text-xl line-clamp-1">
                   {student.name}
                 </h3>
-                <p className="text-gray-400 text-sm mb-3">{student.quote}</p>
+                <p className="mb-3 text-gray-400 text-sm line-clamp-2">
+                  {student.quote}
+                </p>
                 <div className="flex space-x-2 mb-3">
                   <a
-                    href={`https://instagram.com/${student.instagram}`}
+                    href={student.instagram}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-blue-400 hover:text-blue-300"
-                  >
+                    className="text-blue-400 hover:text-blue-300">
                     <i data-feather="instagram"></i>
                   </a>
                   <a
-                    href={`https://linkedin.com/in/${student.linkedin}`}
+                    href={student.linkedin}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-blue-400 hover:text-blue-300"
-                  >
+                    className="text-blue-400 hover:text-blue-300">
                     <i data-feather="linkedin"></i>
                   </a>
                 </div>
@@ -72,8 +77,7 @@ export default function ProfileSection() {
                   href={student.portfolio}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="block text-center bg-blue-600 text-white py-2 rounded-full text-sm"
-                >
+                  className="block bg-blue-600 py-2 rounded-full text-white text-sm text-center">
                   Kunjungi Portfolio
                 </motion.a>
               </div>
