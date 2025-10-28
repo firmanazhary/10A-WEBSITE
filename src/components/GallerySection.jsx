@@ -24,14 +24,18 @@ export default function GallerySection() {
               transition={{ delay: index * 0.1, duration: 0.5 }}
               viewport={{ once: true }}
               whileHover={{ scale: 1.03 }}
-              className="group relative rounded-xl overflow-hidden">
+              className="group group relative rounded-xl overflow-hidden">
               <img
                 src={photo.image}
                 alt={photo.caption}
                 className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
               />
-              <div className="absolute inset-0 flex items-end bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 p-4 transition-opacity duration-300">
-                <p className="font-medium text-white">{photo.caption}</p>
+              <div className="top-0 left-0 z-30 absolute flex flex-col gap-3 bg-black p-5 w-1/2 h-full overflow-y-scroll text-white transition-all -translate-x-full group-hover:translate-x-0 duration-300 scrollbar-hide">
+                <div>
+                  <h1 className="font-bold text-2xl">{photo.caption}</h1>
+                  <h2 className="text-sm">{photo.tanggal}</h2>
+                </div>
+                <p className="text-sm">{photo.description}</p>
               </div>
             </motion.div>
           ))}

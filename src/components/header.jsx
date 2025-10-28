@@ -7,7 +7,7 @@ export default function Header() {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1 }}
-      className="z-50 fixed flex justify-center px-96 py-8 w-full">
+      className="z-50 fixed flex justify-center px-96 max-sm:px-10 max-md:px-52 py-8 w-full">
       <motion.div
         initial={{ y: 50, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}

@@ -35,7 +35,7 @@ export default function HeroSection() {
           <motion.a
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            href="#profiles"
+            href="#gallery"
             className="inline-block bg-blue-600 shadow-lg hover:shadow-xl px-10 py-3 rounded-full text-white transition-all">
             Cerita Kami
           </motion.a>

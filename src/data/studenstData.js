@@ -1,5 +1,7 @@
 import baraka from "../assets/muka/baraka.webp";
 import bara from "../assets/muka/barra.webp";
+import faiz from "../assets/muka/faiz.webp";
+import fawwaz from "../assets/muka/fawwaz.webp";
 
 export const studentsData = [
   {
@@ -32,7 +34,52 @@ export const studentsData = [
     linkedin: "https://www.linkedin.com/in/faiz-ghazali-ba43ab33a/",
     portfolio: "-",
     github: "https://github.com/FaizGhazali0712",
-    photo: bara,
+    photo: faiz,
+    status: "osis",
+  },
+
+  {
+    id: 6,
+    name: "Fawwaz Romzi Nagib",
+    quote: "kebenaran dimulai dari kesalahan",
+    instagram: "-",
+    linkedin: "https://www.linkedin.com/in/fawwaz-romzi-nagib-9056561b5/",
+    portfolio: "https://portfolio-fawwaz.netlify.app/",
+    github: "https://github.com/fawwazRN",
+    photo: fawwaz,
+    status: "osis",
+  },
+  {
+    id: 2,
+    name: "Azzam Siddiq Mutahar",
+    quote: "Kita pernah salah, kita harus belajar darinya",
+    instagram: "https://www.instagram.com/azz4m_21/",
+    linkedin: "www.linkedin.com/in/azzam-siddiq-084941377",
+    portfolio: "-",
+    github: "https://github.com/azzam-2021",
+    photo: faiz,
+    status: "bukan osis",
+  },
+  {
+    id: 8,
+    name: "Izzamnuddin al qassam",
+    quote: "Learn from yesterday, life for today, hope tomorow",
+    instagram: "https://www.instagram.com/coolgraydude/",
+    linkedin: "https://www.linkedin.com/in/izzamnuddin-al-qassam-80958337b/",
+    portfolio: "https://izzamqassam.vercel.app/",
+    github: "https://github.com/Coolgraydudes",
+    photo: faiz,
+    status: "osis",
+  },
+  {
+    id: 7,
+    name: "Imam Sandy Bachtiar",
+    quote: "Every setback builds your next level",
+    instagram: "https://www.instagram.com/imamsb6409",
+    linkedin: "https://www.linkedin.com/in/imam-sandy-bachtiar-1351b8385/",
+    portfolio: "https://adz-health.vercel.app/",
+    github: "https://github.com/Imamsb6409",
+    photo: faiz,
     status: "osis",
   },
 ];
