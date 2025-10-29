@@ -37,12 +37,6 @@ export default function GallerySection() {
                 </div>
                 <p className="text-sm">{photo.description}</p>
               </div>
-              <div className="top-0 left-0 absolute flex flex-col justify-center items-center bg-black/80 w-full h-full text-center transition-all group-hover:translate-x-full duration-300">
-                <h1 className="font-bold text-white text-2xl line-clamp-1">
-                  {photo.caption}
-                </h1>
-                <h2 className="text-white text-sm">{photo.tanggal}</h2>
-              </div>
             </motion.div>
           ))}
         </div>

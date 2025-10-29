@@ -1,5 +1,8 @@
 // src/components/HeroSection.jsx
 import { motion } from "framer-motion";
+import Particles from "../Particles/Particles";
+import Typing from "../teks-animasi/TextType/TextType";
+import { studentsData } from "../data/studenstData";
 import miniLogo from "../assets/mini-logo.svg";
 import gunung from "../assets/story/gunung.webp";
 import kelas from "../assets/story/kelas.webp";
@@ -7,7 +10,13 @@ import leptop from "../assets/story/leptop.webp";
 import sawah from "../assets/story/sawah.webp";
 
 export default function HeroSection() {
-  const carousel = [gunung, kelas, leptop, sawah];
+  const carousel = [gunung, sawah, kelas, leptop];
+  const quotest = studentsData.map((quote) => {
+    const b = quote.quote;
+    return b;
+  });
+  console.log(quotest[2]);
+
   return (
     <motion.section
       id="hero"
@@ -20,18 +29,43 @@ export default function HeroSection() {
         alt=""
         className="-right-40 absolute opacity-20 h-4/5"
       />
+      <div className="absolute w-full h-full">
+        <Particles
+          particleColors={["#ffffff", "#ffffff"]}
+          particleCount={200}
+          particleSpread={10}
+          speed={0.3}
+          particleBaseSize={100}
+          alphaParticles={false}
+          disableRotation={true}
+        />
+      </div>
       <div className="flex justify-between w-full h-full">
         <motion.div
           initial={{ y: 50, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ delay: 0.3, duration: 0.8 }}
-          className="z-10 flex flex-col justify-center items-start max-sm:items-center pr-80 max-sm:pr-0 w-full text-start">
+          className="z-10 flex flex-col justify-center items-start max-sm:items-center pr-80 max-sm:pr-0 max-md:pr-40 w-full text-start">
           <h1 className="mb-4 font-bold text-white text-4xl md:text-6xl">
             LEVINANCE
           </h1>
-          <h2 className="mb-8 font-medium text-blue-200 text-xl md:text-2xl">
-            Rise Beyond the Limits
-          </h2>
+          <Typing
+            text={[
+              quotest[0],
+              quotest[1],
+              quotest[2],
+              quotest[3],
+              quotest[4],
+              quotest[5],
+              quotest[6],
+              quotest[7],
+            ]}
+            typingSpeed={75}
+            pauseDuration={1500}
+            showCursor={true}
+            cursorCharacter="|"
+            className="mb-10 text-cyan-200 text-xl max-sm:text-center"
+          />
           <p className="max-sm:hidden mb-10 text-white">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque sint
             libero facere voluptatem maxime sit repellendus consectetur, ex non
