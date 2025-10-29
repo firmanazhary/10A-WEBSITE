@@ -82,4 +82,15 @@ export const studentsData = [
     photo: faiz,
     status: "osis",
   },
+  {
+    id: 1,
+    name: "Albar Abdul Malik",
+    quote: "The real thing is always 'behind the scene'",
+    instagram: "https://www.instagram.com/eabdl.mlk/",
+    linkedin: "https://www.linkedin.com/in/albar-abdul-malik-364947364/",
+    portfolio: "https://albarabdulm.vercel.app",
+    github: "https://github.com/al4m-2068",
+    photo: faiz,
+    status: "osis",
+  },
 ];

@@ -1,5 +1,6 @@
 // src/components/HeroSection.jsx
 import { motion } from "framer-motion";
+import miniLogo from "../assets/mini-logo.svg";
 
 export default function HeroSection() {
   return (
@@ -8,16 +9,18 @@ export default function HeroSection() {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1 }}
-      className="relative flex flex-col justify-center items-center bg-gradient-to-br from-gray-900 to-blue-900 min-h-screen overflow-hidden">
-      <div className="absolute inset-0 opacity-30">
-        <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=1350&q=80')] bg-cover bg-center opacity-50"></div>
-      </div>
+      className="relative flex flex-col justify-center items-start bg-gradient-to-br from-gray-900 to-blue-900 min-h-screen overflow-hidden">
+      <img
+        src={miniLogo}
+        alt=""
+        className="right-20 absolute opacity-20 h-4/5"
+      />
 
       <motion.div
         initial={{ y: 50, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ delay: 0.3, duration: 0.8 }}
-        className="z-10 px-4 text-center">
+        className="z-10 px-4 text-start">
         <h1 className="mb-4 font-bold text-white text-4xl md:text-6xl">
           LEVINANCE
         </h1>

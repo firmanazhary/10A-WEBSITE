@@ -13,7 +13,7 @@ export default function Header() {
         animate={{ y: 0, opacity: 1 }}
         transition={{ delay: 0.3, duration: 0.8 }}
         className="flex justify-center w-full">
-        <ul className="group flex justify-center hover:justify-between items-center bg-[#1e2c50] hover:bg-[#131c34] hover:shadow-sm hover:shadow-white hover:px-10 rounded-full hover:w-full size-12 text-white transition-all duration-200">
+        <ul className="group flex justify-center max-md:justify-between hover:justify-between items-center bg-[#1e2c50] hover:bg-[#131c34] hover:shadow-sm hover:shadow-white max-md:px-5 hover:px-10 rounded-full max-md:w-full hover:w-full size-12 text-white transition-all duration-200">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
@@ -24,19 +24,19 @@ export default function Header() {
             stroke-width="2"
             stroke-linecap="round"
             stroke-linejoin="round"
-            class="group-hover:hidden block icons-tabler-outline icon icon-tabler icon-tabler-menu-2">
+            class="max-md:hidden group-hover:hidden block icons-tabler-outline icon icon-tabler icon-tabler-menu-2">
             <path stroke="none" d="M0 0h24v24H0z" fill="none" />
             <path d="M4 6l16 0" />
             <path d="M4 12l16 0" />
             <path d="M4 18l16 0" />
           </svg>
-          <li className="hidden group-hover:block">
+          <li className="hidden max-md:block group-hover:block">
             <a href="#hero">Home</a>
           </li>
-          <li className="hidden group-hover:block">
+          <li className="hidden max-md:block group-hover:block">
             <a href="#profiles">Our Profile</a>
           </li>
-          <li className="hidden group-hover:block">
+          <li className="hidden max-md:block group-hover:block">
             <a href="#gallery">Our Gallery</a>
           </li>
         </ul>

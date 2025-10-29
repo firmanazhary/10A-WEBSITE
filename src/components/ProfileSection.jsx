@@ -39,19 +39,18 @@ export default function ProfileSection() {
                     alt={student.name}
                     className="w-full h-full object-cover"
                   />
-                  <p
-                    className={`${
-                      student.status == "osis"
-                        ? "bg-teal-950 text-white py-1 px-4 rounded-r-full top-3 left-0 absolute"
-                        : "hidden"
-                    }`}>
-                    {student.status}
-                  </p>
                 </div>
                 <div className="flex flex-col justify-between p-4 h-[calc(100%-192px)]">
-                  <h3 className="mb-1 font-bold text-white text-xl line-clamp-1">
+                  <h3 className="mb-1 w-full font-bold text-white text-xl line-clamp-1">
+                    <span
+                      className={`${
+                        student.status == "osis" ? "inline mr-1" : "hidden"
+                      }`}>
+                      🌟
+                    </span>
                     {student.name}
                   </h3>
+
                   <p className="mb-3 text-gray-400 text-sm line-clamp-2">
                     {student.quote}
                   </p>
