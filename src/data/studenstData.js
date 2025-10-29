@@ -52,7 +52,7 @@ export const studentsData = [
   {
     id: 2,
     name: "Azzam Siddiq Mutahar",
-    quote: "Kita pernah salah, kita harus belajar darinya",
+    quote: "Anyone here's has done a bad thing, you can't escape the past",
     instagram: "https://www.instagram.com/azz4m_21/",
     linkedin: "www.linkedin.com/in/azzam-siddiq-084941377",
     portfolio: "-",

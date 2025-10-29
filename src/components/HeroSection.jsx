@@ -89,21 +89,39 @@ export default function HeroSection() {
             </motion.a>
           </div>
         </motion.div>
-        <div className="mx-auto h-full">
-          <motion.div
-            className="max-md:hidden flex flex-col justify-center gap-20 animate-scroll-up"
-            initial={{ y: 50, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            transition={{ delay: 0.3, duration: 0.8 }}>
-            {[...carousel, ...carousel].map((item, i) => (
-              <img
-                src={item}
-                alt=""
-                key={i}
-                className="rounded-2xl w-[300px] h-[400px] object-cover"
-              />
-            ))}
-          </motion.div>
+        <div className="flex gap-10 -rotate-12">
+          <div className="mx-auto h-full">
+            <motion.div
+              className="max-md:hidden flex flex-col justify-center gap-20 animate-scroll-up"
+              initial={{ y: 50, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ delay: 0.3, duration: 0.8 }}>
+              {[...carousel, ...carousel].map((item, i) => (
+                <img
+                  src={item}
+                  alt=""
+                  key={i}
+                  className="rounded-2xl w-[350px] h-[400px] object-cover"
+                />
+              ))}
+            </motion.div>
+          </div>
+          <div className="mx-auto h-full">
+            <motion.div
+              className="max-md:hidden flex flex-col justify-center gap-20 animate-scroll-down"
+              initial={{ y: 50, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ delay: 0.3, duration: 0.8 }}>
+              {[...carousel, ...carousel, ...carousel].map((item, i) => (
+                <img
+                  src={item}
+                  alt=""
+                  key={i}
+                  className="rounded-2xl w-[350px] h-[400px] object-cover"
+                />
+              ))}
+            </motion.div>
+          </div>
         </div>
       </div>
     </motion.section>

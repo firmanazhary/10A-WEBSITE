@@ -69,6 +69,13 @@ export default function ProfileSection() {
                       className="text-blue-400 hover:text-blue-300">
                       <i data-feather="linkedin"></i>
                     </a>
+                    <a
+                      href={student.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-blue-400 hover:text-blue-300">
+                      <i data-feather="github"></i>
+                    </a>
                   </div>
 
                   {/* Tombol ke portfolio eksternal */}
