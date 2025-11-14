@@ -4,13 +4,12 @@ import Particles from "../Particles/Particles";
 import Typing from "../teks-animasi/TextType/TextType";
 import { studentsData } from "../data/studenstData";
 import miniLogo from "../assets/mini-logo.svg";
-import gunung from "../assets/story/gunung.webp";
-import kelas from "../assets/story/kelas.webp";
-import leptop from "../assets/story/leptop.webp";
-import sawah from "../assets/story/sawah.webp";
+import eduverse from "../assets/story/eduverse.webp";
+import xpboost from "../assets/story/xpboost.webp";
+import breadpapas from "../assets/story/bread-papas.webp";
 
 export default function HeroSection() {
-  const carousel = [gunung, sawah, kelas, leptop];
+  const carousel = [eduverse, xpboost, breadpapas];
   const quotest = studentsData.map((quote) => {
     const b = quote.quote;
     return b;
