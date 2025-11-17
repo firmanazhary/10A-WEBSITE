@@ -97,7 +97,7 @@ export default function HeroSection() {
                   src={item}
                   alt=""
                   key={i}
-                  className="rounded-2xl w-[350px] h-[400px] object-cover"
+                  className="rounded-2xl w-[350px] h-[400px] object-cover shadow-2xl shadow-black/30 brightness-[0.88]"
                 />
               ))}
             </motion.div>
@@ -113,7 +113,7 @@ export default function HeroSection() {
                   src={item}
                   alt=""
                   key={i}
-                  className="rounded-2xl w-[350px] h-[400px] object-cover"
+                  className="rounded-2xl w-[350px] h-[400px] object-cover shadow-2xl shadow-black/30 brightness-[0.88]"
                 />
               ))}
             </motion.div>
