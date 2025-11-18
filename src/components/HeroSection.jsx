@@ -26,16 +26,16 @@ export default function HeroSection() {
       <img
         src={miniLogo}
         alt=""
-        className="-right-40 absolute opacity-20 h-4/5"
+        className="-right-40 absolute opacity-5 h-4/5"
       />
       <div className="absolute w-full h-full">
         <Particles
           particleColors={["#ffffff", "#ffffff"]}
-          particleCount={200}
-          particleSpread={10}
-          speed={0.3}
+          particleCount={90}
+          particleSpread={8}
+          speed={0.15}
           particleBaseSize={100}
-          alphaParticles={false}
+          alphaParticles={true}
           disableRotation={true}
         />
       </div>
@@ -63,13 +63,10 @@ export default function HeroSection() {
             pauseDuration={1500}
             showCursor={true}
             cursorCharacter="|"
-            className="mb-10 text-cyan-200 text-xl max-sm:text-center"
+            className="mb-10 text-cyan-200/80 text-xl max-sm:text-center"
           />
           <p className="max-sm:hidden mb-10 text-white">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque sint
-            libero facere voluptatem maxime sit repellendus consectetur, ex non
-            nostrum, exercitationem quaerat velit ad necessitatibus quia
-            quisquam amet sed blanditiis!
+           Perjalanan kami tidak hanya tentang belajar, tetapi juga tentang persahabatan, pengalaman, cerita, dan masa yang tidak akan kembali.
           </p>
           <div className="max-sm:hidden flex justify-center gap-5">
             <motion.a
@@ -100,7 +97,7 @@ export default function HeroSection() {
                   src={item}
                   alt=""
                   key={i}
-                  className="rounded-2xl w-[350px] h-[400px] object-cover"
+                  className="rounded-2xl w-[350px] h-[400px] object-cover shadow-2xl shadow-black/30 brightness-[0.88]"
                 />
               ))}
             </motion.div>
@@ -116,7 +113,7 @@ export default function HeroSection() {
                   src={item}
                   alt=""
                   key={i}
-                  className="rounded-2xl w-[350px] h-[400px] object-cover"
+                  className="rounded-2xl w-[350px] h-[400px] object-cover shadow-2xl shadow-black/30 brightness-[0.88]"
                 />
               ))}
             </motion.div>
