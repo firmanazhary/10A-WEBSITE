@@ -19,6 +19,7 @@ export default {
       },
       fontFamily: {
         jakarta: "Plus Jakarta Sans",
+         proximaBlack: ['ProximaNovaBlack', 'sans-serif'],
       },
     },
   },

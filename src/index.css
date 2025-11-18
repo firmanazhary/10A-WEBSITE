@@ -1,3 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* font yang di gunakan */
+@font-face {
+  font-family: 'ProximaNovaBlack';
+  src: url('../src/assets/font/Demo_Fonts/Fontspring-DEMO-proximanova-black.otf') format('opentype');
+  font-weight: 900;
+  font-style: normal;
+}
+
