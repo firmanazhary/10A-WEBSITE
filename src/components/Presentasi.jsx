@@ -63,7 +63,7 @@ export default function Presentasi({ autoPlay = true, duration = 3000 }) {
           {slides.map((s, i) => (
             <div
               key={i}
-              className="relative min-w-full h-[60vh] sm:h-[70vh] md:h-[80vh]"
+              className="relative min-w-full h-[60vh] sm:h-[70vh] md:h-[45vh] lg:h-[80vh] flex justify-center items-center"
             >
               {/* Image */}
               <img
@@ -81,7 +81,7 @@ export default function Presentasi({ autoPlay = true, duration = 3000 }) {
                   <p className="text-sm sm:text-base md:text-lg mb-6 leading-relaxed">
                     {s.description}
                   </p>
-                  <button className="bg-yellow-500 text-white font-bold px-6 py-3 rounded-lg hover:bg-yellow-600 transform hover:scale-105 transition duration-300">
+                  <button className="bg-gradient-to-br from-[#FF9D00] to-[#F87B1B] text-white font-bold px-6 py-3 rounded-lg transform hover:scale-105 transition duration-300">
                     {s.button}
                   </button>
                 </div>
