@@ -1,22 +1,33 @@
 import { useState, useEffect } from "react";
+import Bread from "../assets/story/bread-papas.webp";
+import XP from "../assets/story/xpboost.webp";
+import kopitepi from "../assets/story/kopitepi.webp";
+import eduverse from "../assets/story/eduverse.webp";
+import { title } from "framer-motion/client";
 
 const slides = [
   {
     title: "Presentasi",
     description: "Ini adalah isi slide pertama.",
-    image: "/images/slide1.jpg",
+    image: Bread,
     button: "Action"
   },
   {
     title: "Slide Kedua",
     description: "Konten di slide kedua.",
-    image: "/images/slide2.jpg",
+    image: XP,
     button: "Action"
   },
   {
     title: "Slide Ketiga",
     description: "Slide ketiga berisi apa pun yang kamu mau.",
-    image: "/images/slide3.jpg",
+    image: kopitepi,
+    button: "Action"
+  },
+  {
+    title: "Slide Keempat",
+    description: "Slide keempat berisi apa pun yang kamu mau.",
+    image: eduverse,
     button: "Action"
   }
 ];
@@ -62,12 +73,12 @@ export default function Presentasi({ autoPlay = true, duration = 3000 }) {
               />
 
               {/* Overlay */}
-              <div className="absolute inset-0 bg-black/40 flex justify-center items-center text-center rounded-2xl px-4 sm:px-8">
-                <div className="text-white max-w-xl mx-auto">
+              <div className="absolute inset-0 bg-black/40 flex items-end rounded-2xl px-4 sm:px-8 pb-6">
+                <div className="text-white max-w-xl">
                   <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold mb-3">
                     {s.title}
                   </h1>
-                  <p className="text-sm sm:text-base md:text-lg mb-8 leading-relaxed">
+                  <p className="text-sm sm:text-base md:text-lg mb-6 leading-relaxed">
                     {s.description}
                   </p>
                   <button className="bg-yellow-500 text-white font-bold px-6 py-3 rounded-lg hover:bg-yellow-600 transform hover:scale-105 transition duration-300">
@@ -75,6 +86,7 @@ export default function Presentasi({ autoPlay = true, duration = 3000 }) {
                   </button>
                 </div>
               </div>
+
             </div>
           ))}
         </div>
