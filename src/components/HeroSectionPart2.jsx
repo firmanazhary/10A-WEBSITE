@@ -20,14 +20,14 @@ export default function HeroSectionPart2() {
 
              {/* card foto untuk dekstop dan tablet */}
              <div className="flex justify-center lg:-mt-[380px] max-sm:hidden md:-mt-[270px] md:px-10">
-                <img src={gambar2} alt="" className="w-[350px] h-[350px] rounded-[20px] mt-52 -rotate-12 -mr-20 md:w-[270px] md:-mr-10 md:h-[270px]"/>
+                <img src={gambar2} alt="" className="lg:w-[350px] lg:h-[350px] rounded-[20px] lg:mt-52 -rotate-12 -mr-20 md:w-[270px] md:-mr-10 md:h-[270px] md:mt-40"/>
 
-                <div className="lg:w-[450px] bg-white rounded-[40px] flex flex-col items-center relative pb-10 md:w-[300px] z-10">
+                <div className="lg:w-[450px] bg-white rounded-[40px] flex flex-col items-center relative pb-10 md:w-[300px] z-10 md:h-[400px] lg:h-[600px]">
                     <img src={gambar} alt="" className="md:w-[400px] lg:w-[600px] py-7 px-5"/>
                     <h1 className="bg-[#FF9D00] font-proximaBlack lg:text-[30px] px-2 text-white absolute top-0 lg:right-10 md:text-[20px] md:right-10">ZENTHORIA</h1>
                     <h2 className="font-poppins font-semibold lg:text-[25px] text-[#1C1C1C] md:text-[18px] md:w-[300px] text-center lg:w-[400px]">Beda Tingkah, Satu Frekuensi</h2>
                 </div>
-                <img src={gambar3} alt="" className="w-[350px] h-[350px] rounded-[20px] mt-[200px] rotate-[20deg] -ml-16 md:w-[270px] md:-ml-10 md:h-[270px]"/>
+                <img src={gambar3} alt="" className="lg:w-[350px] lg:h-[350px] rounded-[20px] mt-[200px] rotate-[20deg] -ml-16 md:w-[270px] md:-ml-10 md:h-[270px]"/>
              </div>
 
         </div>
