@@ -3,6 +3,9 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      letterSpacing: {
+        '13p': '0.13em',
+      },
       keyframes: {
         "scroll-up": {
           "0%": { transform: "translateY(0)" },
@@ -20,6 +23,7 @@ export default {
       fontFamily: {
         jakarta: "Plus Jakarta Sans",
          proximaBlack: ['ProximaNovaBlack', 'sans-serif'],
+         poppins: ['Poppins', 'sans-serif'],
       },
     },
   },
