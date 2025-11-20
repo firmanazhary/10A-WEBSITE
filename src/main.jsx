@@ -1,12 +1,12 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
-import App from './App.jsx'
 import Isi  from './Isi.jsx'
+import HeroSectionPart2 from './components/HeroSectionPart2.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <App />
+    <HeroSectionPart2 />  
     <Isi />
   </StrictMode>,
 )

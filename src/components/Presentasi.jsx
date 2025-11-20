@@ -7,28 +7,28 @@ import { title } from "framer-motion/client";
 
 const slides = [
   {
-    title: "Presentasi",
+    title: "Bread Papas",
     description: "Ini adalah isi slide pertama.",
     image: Bread,
-    button: "Action"
+    button: "Visit"
   },
   {
-    title: "Slide Kedua",
+    title: "XP Boost",
     description: "Konten di slide kedua.",
     image: XP,
-    button: "Action"
+    button: "Visit"
   },
   {
-    title: "Slide Ketiga",
+    title: "Kopi Tepi",
     description: "Slide ketiga berisi apa pun yang kamu mau.",
     image: kopitepi,
-    button: "Action"
+    button: "Visit"
   },
   {
-    title: "Slide Keempat",
+    title: "Eduverse",
     description: "Slide keempat berisi apa pun yang kamu mau.",
     image: eduverse,
-    button: "Action"
+    button: "Visit"
   }
 ];
 
