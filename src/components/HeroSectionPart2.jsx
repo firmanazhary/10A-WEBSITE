@@ -5,7 +5,7 @@ import gambar3 from "../assets/muka/bocah.png";
 
 export default function HeroSectionPart2() {
     return( 
-    <section className="bg-[linear-gradient(113.04deg,_#0A1A2F_13.32%,_#0F1F3D_67.63%)] flex flex-col">
+    <section className="bg-[linear-gradient(113.04deg,_#0A1A2F_13.32%,_#0F1F3D_67.63%)] flex flex-col ">
         <div className="w-full h-auto flex flex-col lg:pl-5 md:pl-4 lg:pr-5  md:pr-4">
             <h1 className="text-[60px] md:text-[140px] lg:text-[210px] text-center font-bold font-proximaBlack text-white hidden md:block ">ZENTHORIA</h1>
             <h1 className="text-[60px] md:text-[140px] lg:text-[210px] text-center font-bold font-proximaBlack text-white/20 lg:-mt-32 md:-mt-20 sm:mt-0 hidden md:block">ZENTHORIA</h1>
