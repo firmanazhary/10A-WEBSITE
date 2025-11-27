@@ -33,7 +33,7 @@ export default function Navigasi(){
             </div>
 
             {/* untuk mobile */}
-           <div className="flex justify-around items-center fixed left-0 right-0 z-50 max-sm:block bg-[#0A1A2F] py-3 md:hidden top-[610px]">
+           <div className="flex justify-around items-center fixed left-0 right-0 z-50 max-sm:block bg-[#0A1A2F] py-3 md:hidden bottom-0">
             <div className="flex justify-around text-white">
 
     {/* HOME */}
