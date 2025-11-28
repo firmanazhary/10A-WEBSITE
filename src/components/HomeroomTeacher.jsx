@@ -1,11 +1,10 @@
-import ustadz from "../assets/muka/ustad.png"
-import koma from "../assets/koma-atas.png"
+
 
 export default function HomeroomTeacher() {
     return (
         <section className="w-[100%] bg-white rounded-[40px] flex flex-col items-center relative z-10 h-auto px-2">
             <div className="w-full">
-                <img src={ustadz} alt="" className="rounded-[40px] w-full h-auto"/>
+                <img src="" alt="" className="rounded-[40px] w-full h-auto"/>
                 <h1 className="bg-[#FF9D00] font-proximaBlack lg:text-[30px] px-2 text-white absolute top-0 lg:right-10 md:text-[20px] md:right-10">Homeroom Teacher</h1>
             </div>
             <div>
@@ -20,7 +19,7 @@ export default function HomeroomTeacher() {
                 </div>
                 <div className="flex flex-row relative gap-5 w-full items-center -mt-[15px] lg:-mt-[50px]">
                     <div className="">
-                        <img src={koma} alt="" className="lg:w-[290px] h-auto w-[90px] "/>
+                        <img src=" " alt="" className="lg:w-[290px] h-auto w-[90px] "/>
                     </div>
                     <div>
                         <p className="text-[#3E4B63] text-20px lg:text-[60px] font-proximaBlack">Belajar itu proses, bukan perlombaan</p>
