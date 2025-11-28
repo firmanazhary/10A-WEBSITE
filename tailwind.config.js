@@ -22,8 +22,8 @@ export default {
       },
       fontFamily: {
         jakarta: "Plus Jakarta Sans",
-         proximaBlack: ['ProximaNovaBlack', 'sans-serif'],
-         poppins: ['Poppins', 'sans-serif'],
+        vietnam: "Be Vietnam Pro",
+
       },
     },
   },

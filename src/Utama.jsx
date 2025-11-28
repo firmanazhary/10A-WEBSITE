@@ -5,7 +5,7 @@ import Navigasi from "./components/Navigasi";
 
 export default function Utama() {
     return (
-        <div className="bg-gradient-to-br from-[#0A1A2F] to-[#0F1F3D]">\
+        <div className="bg-[radial-gradient(67.9%_44.18%_at_50%_63.51%,#021427_0%,#0A66C2_100%)]">
             <Navigasi />
             <HeroSectionPart2 />
             <Isi />
