@@ -52,6 +52,10 @@ export default function HeroSectionPart2() {
           <h1 className="text-[27vh] text-trim">THORIA</h1>
         </div>
       </div>
+
+
+
+      {/* foto bersama */}
     </section>
   );
 }
