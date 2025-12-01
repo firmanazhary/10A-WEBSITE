@@ -1,7 +1,7 @@
-import gambar from "../assets/muka/gktau.webp";
-import gambar2 from "../assets/muka/angkatan.png";
-import gambar3 from "../assets/muka/bocah.png";
-import "../index.css";
+import gambar from "../assets/story/lulus.webp";
+import gambar2 from "../assets/story/pelangi.webp";
+import gambar3 from "../assets/story/ramean.webp";
+import "../index.css"
 
 export default function HeroSectionPart2() {
   return (
@@ -56,6 +56,18 @@ export default function HeroSectionPart2() {
 
 
       {/* foto bersama */}
+      <div>
+        <img src="" alt="img" />
+        <img src="" alt="img" />
+        <img src="" alt="img" />
+        <img src="" alt="img" />
+        <div>
+          <p>
+            Don’t leave quickly! There’s lot more to explore, go scroll and
+          </p>
+          <h1>Explore our story ↓</h1>
+        </div>
+      </div>
     </section>
   );
 }
