@@ -83,4 +83,4 @@ export default function MomenPenting() {
       </div>
     </section>
   );
-}rounded
+}
