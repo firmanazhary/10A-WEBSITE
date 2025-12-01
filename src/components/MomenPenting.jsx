@@ -1,4 +1,7 @@
-import Gambar from "../assets/muka/pelangi.jpg";
+import Telaga from "../assets/story/pelangi.webp";
+import Lulus from "../assets/story/lulus.webp";
+import Fest from "../assets/story/munfest.webp";
+import gktau from "../assets/story/sawah.webp";
 
 export default function MomenPenting() {
   return (
@@ -9,14 +12,14 @@ export default function MomenPenting() {
 
       <div
         className="absolute top-[50%] left-1/2 -translate-x-1/2 w-[500px] h-[500px] opacity-20 z-0 rounded-xl bg-cover bg-no-repeat grayscale"
-        style={{ backgroundImage: `url(${Gambar})` }}
+        style={{ backgroundImage: `url(${Telaga})` }}
       ></div>
 
       <div className="grid grid-cols-4 grid-rows-2 gap-10 z-20 mx-10">
         {/* CARD 1 */}
-        <div className="row-start-1 col-start-1 row-end-2 col-end-2 h-auto rounded-xl shadow flex flex-col items-center p-4 bg-[#ffffff0f] backdrop-blur-md">
+        <div className="row-start-1 col-start-1 row-end-2 col-end-2 h-auto rounded-xl flex flex-col items-center">
           <div className="w-72 flex justify-center items-center">
-            <img src={Gambar} alt="" className="grayscale rounded-none" />
+            <img src={Telaga} alt="" className="grayscale rounded-none w-[250px] h-[250px]"/>
           </div>
           <div className="w-72 h-auto mt-2 items-center flex flex-col">
             <p className="font-vietnam text-2xl text-white text-center">
@@ -33,7 +36,7 @@ export default function MomenPenting() {
         {/* CARD 2 */}
         <div className="row-start-2 col-start-2 row-end-3 col-end-3 h-auto rounded-xl shadow flex flex-col items-center p-4 bg-[#ffffff0f] backdrop-blur-md">
           <div className="w-72 flex justify-center items-center">
-            <img src={Gambar} alt="" className="grayscale rounded-none" />
+            <img src={Lulus} alt="" className="grayscale rounded-none w-[250px] h-[250px]" />
           </div>
           <div className="w-72 h-auto mt-2 items-center flex flex-col">
             <p className="font-vietnam text-2xl text-white text-center">
@@ -50,7 +53,7 @@ export default function MomenPenting() {
         {/* CARD 3 */}
         <div className="row-start-1 col-start-4 row-end-2 col-end-5 h-auto rounded-xl shadow flex flex-col items-center p-4 bg-[#ffffff0f] backdrop-blur-md">
           <div className="w-72 flex justify-center items-center">
-            <img src={Gambar} alt="" className="grayscale rounded-none" />
+            <img src={Fest} alt="" className="grayscale rounded-none w-[250px] h-[250px]" />
           </div>
           <div className="w-72 h-auto mt-2 items-center flex flex-col">
             <p className="font-vietnam text-2xl text-white text-center">
@@ -67,7 +70,7 @@ export default function MomenPenting() {
         {/* CARD 4 */}
         <div className="row-start-2 col-start-3 row-end-3 col-end-4 h-auto rounded-xl shadow flex flex-col items-center p-4 bg-[#ffffff0f] backdrop-blur-md">
           <div className="w-72 flex justify-center items-center">
-            <img src={Gambar} alt="" className="grayscale rounded-none" />
+            <img src={gktau} alt="" className="grayscale rounded-none w-[250px] h-[250px]" />
           </div>
           <div className="w-72 h-auto mt-2 items-center flex flex-col">
             <p className="font-vietnam text-2xl text-white text-center">
@@ -83,4 +86,4 @@ export default function MomenPenting() {
       </div>
     </section>
   );
-}rounded
+}
