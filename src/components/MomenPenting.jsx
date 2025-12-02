@@ -7,11 +7,13 @@ export default function MomenPenting() {
   return (
     <section className="w-full px-5 py-10 relative flex flex-col h-auto bg-[#0A66C2]">
       <div
-        className="absolute left-1/2 -translate-x-1/2 w-[500px] h-[500px] opacity-65 z-0 rounded-xl bg-cover bg-no-repeat grayscale"
+        className="absolute left-1/2 -translate-x-1/2 w-[500px] h-[750px] opacity-65 z-0 rounded-xl bg-cover bg-no-repeat grayscale"
         style={{ backgroundImage: `url(${Fest})` }}
       ></div>
 
-      <div className="grid grid-cols-4 grid-rows-2 gap-10 z-20 mx-10 mt-10">
+
+{/* parent card */}
+      <div className="grid grid-cols-4 grid-rows-2 gap-10 z-20 mx-10 mt-40">
         <h1 className="text-4xl font-bold font-vietnam text-white text-center 
           row-start-1 row-end-3 col-start-2 col-end-4 flex items-center justify-center -mt-96">
           MOMEN-MOMEN<span className="font-birthstone"> Berharga</span>
