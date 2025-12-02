@@ -6,7 +6,7 @@ import "../index.css";
 
 export default function HeroSectionPart2() {
   return (
-    <section className="h-screen relative">
+    <section className="h-screen relative z-20">
       <div className="pl-[62px] pt-[62px] pb-[62px]">
         <h1 className="font-vietnam text-white font-black text-[9vh]">
           WE ARE
@@ -57,30 +57,30 @@ export default function HeroSectionPart2() {
       </div>
 
       {/* foto bersama */}
-        <img
-          src={gambar}
-          alt="img"
-          className="absolute -bottom-[50px]  inline-block w-[413px] h-[480px] object-cover rounded-[30px]"
-        />
-        <img
-          src={gambar2}
-          alt="img"
-          className="absolute -bottom-[50px] -ml-[200px] inline-block w-[433px] h-[500px] object-cover rounded-[30px]"
-        />
-        <img
-          src={gambar4}
-          alt="img"
-          className="absolute -bottom-[50px] -ml-[200px] inline-block w-[433px] h-[500px] object-cover rounded-[30px]"
-        />
-        <img
-          src={gambar3}
-          alt="img"
-          className="absolute -bottom-[50px] -ml-[200px] inline-block w-[413px] h-[480px] object-cover rounded-[30px]"
-        />
-        <div className="inline-block">
-          <p>Don’t leave quickly! There’s lot more to explore, go scroll and</p>
-          <h1>Explore our story ↓</h1>
-        </div>
+      <img
+        src={gambar}
+        alt="img"
+        className="absolute -bottom-[140px] left-5 inline-block w-[350px] h-[480px] object-cover rounded-[30px]"
+      />
+      <img
+        src={gambar2}
+        alt="img"
+        className="absolute -bottom-[140px] left-[400px] inline-block w-[433px] h-[500px] object-cover rounded-[30px]"
+      />
+      <img
+        src={gambar4}
+        alt="img"
+        className="absolute -bottom-[140px] left-[600px] inline-block w-[433px] h-[500px] object-cover rounded-[30px]"
+      />
+      <img
+        src={gambar3}
+        alt="img"
+        className="absolute -bottom-[140px] left-[900px] inline-block w-[413px] h-[480px] object-cover rounded-[30px]"
+      />
+      <div className="inline-block left-[1200px] absolute bottom-[100px] bg-white">
+        <p>Don’t leave quickly! There’s lot more to explore, go scroll and</p>
+        <h1>Explore our story ↓</h1>
+      </div>
     </section>
   );
 }
