@@ -1,6 +1,7 @@
 import gambar from "../assets/story/lulus.webp";
 import gambar2 from "../assets/story/pelangi.webp";
 import gambar3 from "../assets/story/ramean.webp";
+import gambar4 from "../assets/story/munfest.webp";
 import "../index.css"
 
 export default function HeroSectionPart2() {
