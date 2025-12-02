@@ -23,7 +23,7 @@ export default {
       fontFamily: {
         jakarta: "Plus Jakarta Sans",
         vietnam: "Be Vietnam Pro",
-
+        birthstone: "Birthstone",
       },
     },
   },
