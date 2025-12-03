@@ -4,15 +4,14 @@ import ustadz from "../assets/story/ustd.webp"
 
 export default function HomeroomTeacher() {
     return (
-        <section className=''>
+        <section>
 <div style={{
       backgroundImage: `url(${bgSection})`,
-      backgroundColor: "lightgray",
       backgroundPosition: "-57.542px -377.992px",
       backgroundSize: "146.635% 165.417%",
       backgroundRepeat: "no-repeat",
-}} className='w-[94vw] h-[110vh] flex flex-row py-10 px-10 gap-10 relative rounded-lg mx-auto my-20'>
-     <div className="absolute inset-0 bg-[#0A66C2]/50 opacity-40 rounded-3xl"></div>
+}} className='w-[94vw] h-[110vh] flex flex-row py-10 px-10 gap-10 relative rounded-[50px] mx-auto my-20'>
+     <div className="absolute inset-0 bg-[#0A66C2]/50 opacity-40 rounded-[50px]"></div>
 <div className='relative h-full w-1/2 flex flex-col justify-center items-start gap-5 px-6'>
     <div className='h-1/3 w-full'>
       <p className='font-birthstone font-bold text-white text-4xl'>pelita penerang</p>

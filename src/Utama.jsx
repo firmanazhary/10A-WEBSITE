@@ -4,7 +4,6 @@ import Isi from "./Isi.jsx";
 import HeroSectionPart2 from "./components/HeroSectionPart2.jsx";
 import Navigasi from "./components/Navigasi";
 import JadwalKelas from "./components/pages/JadwalKelas.jsx"; 
-import { CardProfileStudent } from "./components/CardProfileStudent.jsx";
 
 export default function Utama() {
     return (
@@ -20,7 +19,6 @@ export default function Utama() {
                           <Navigasi />
                             <HeroSectionPart2/>
                             <Isi />
-                            <CardProfileStudent/>
                         </div>
                     } 
                 />
