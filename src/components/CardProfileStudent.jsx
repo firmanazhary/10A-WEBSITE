@@ -53,15 +53,15 @@ export const CardProfileStudent = () => {
   );
 
   return (
-    <div className="bg-black p-4 max-h-[110vh] overflow-hidden relative flex flex-col items-center">
+    <div className="bg-black  max-h-[110vh] overflow-x-hidden overflow-y-visible relative flex flex-col items-center">
       {/* hiasan latar belakang start*/}
       <div className="bg-[#FF9D00]/60 blur-3xl absolute top-[100px] -left-[110px] rounded-full w-[306px] h-[306px]"></div>
       <div className="bg-[#FF9D00]/60 blur-3xl absolute bottom-[70px] -right-[110px] rounded-full w-[306px] h-[306px]"></div>
       {/* hiasan latar belakang end */}
 
       {/* text heading start */}
-      <div className="text-center font-birthstone text-white mt-[100px]">
-        <h2 className="text-[110px]">Kenalan Dengan</h2>
+      <div className="text-center font-birthstone text-white bg-transparent absolute z-10 w-full h-auto backdrop-blur-md pt-[100px]">
+        <h2 className="text-[110px]">Kenalan Dengan</h2> 
         <h2 className="text-[110px] -mt-10">
           The{" "}
           <span className="font-vietnam font-extrabold uppercase">
@@ -82,7 +82,7 @@ export const CardProfileStudent = () => {
         {/* Tombol scroll bawah */}
         <button
           onClick={() => scrollByAmount("down")}
-          className="z-10   w-[48px] h-[48px] border flex items-center justify-center bg-white/10 text-white rounded-full hover:bg-white/20"
+          className="z-10  w-[48px] h-[48px] border flex items-center justify-center bg-white/10 text-white rounded-full hover:bg-white/20"
         >
           {btnDown}
         </button>
@@ -92,7 +92,7 @@ export const CardProfileStudent = () => {
 
       <div
         ref={scrollRef}
-        className="grid grid-cols-4 gap-3 w-max overflow-y-hidden  max-h-[600px] scroll-smooth relative"
+        className="grid grid-cols-4 gap-3 w-max  overflow-y-hidden  max-h-[1000px] scroll-smooth relative"
       >
         {studentsData.map((student) => (
           <div
