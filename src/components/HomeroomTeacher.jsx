@@ -12,7 +12,7 @@ export default function HomeroomTeacher() {
       backgroundSize: "146.635% 165.417%",
       backgroundRepeat: "no-repeat",
 }} className='w-[94vw] h-[110vh] flex flex-row py-10 px-10 gap-10 relative rounded-lg mx-auto my-20'>
-     <div className="absolute inset-0 bg-[#0A66C2]/50 opacity-40 rounded-lg"></div>
+     <div className="absolute inset-0 bg-[#0A66C2]/50 opacity-40 rounded-3xl"></div>
 <div className='relative h-full w-1/2 flex flex-col justify-center items-start gap-5 px-6'>
     <div className='h-1/3 w-full'>
       <p className='font-birthstone font-bold text-white text-4xl'>pelita penerang</p>
