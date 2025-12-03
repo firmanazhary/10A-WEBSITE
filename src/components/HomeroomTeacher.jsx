@@ -16,17 +16,18 @@ export default function HomeroomTeacher() {
 <div className='relative h-full w-1/2 flex flex-col justify-center items-start gap-5 px-6'>
     <div className='h-1/3 w-full'>
       <p className='font-birthstone font-bold text-white text-4xl'>pelita penerang</p>
-      <p className='font-birthstone font-bold text-white text-4xl'>
+      <p className='font-birthstone font-bold text-white text-5xl'>
         our <span className='font-vietnam'>HOMEROOM TEACHER</span>
       </p>
     </div>
 
-    <div className='h-1/3 w-full'>
-      <div className='w-80 h-64 bg-slate-400'></div>
+    <div className='h-1/3 w-full flex flex-row gap-5'>
+      <div className='w-60 h-48 bg-slate-400'></div>
+      <div className='w-60 h-48 bg-slate-400'></div>
     </div>
 
     <div className='h-1/3 w-full'>
-      <p className='font-vietnam text-white text-base'>Hello! I am a Software Engineering student at Politeknik IDN, where I am deeply passionate about learning new technologies and enhancing my programming skills. I also work as an IT teacher, guiding students in web development and other IT-related subjects. As a Web Developer, I create functional and visually appealing websites. Alongside these roles, I take on freelance projects to further expand my experience in the tech industry</p>
+      <p className='font-vietnam text-white text-sm  tracking-wider'>Hello! I am a Software Engineering student at Politeknik IDN, where I am deeply passionate about learning new technologies and enhancing my programming skills. I also work as an IT teacher, guiding students in web development and other IT-related subjects. As a Web Developer, I create functional and visually appealing websites. Alongside these roles, I take on freelance projects to further expand my experience in the tech industry</p>
     </div>
   </div>
 
