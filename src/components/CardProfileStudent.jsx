@@ -27,7 +27,7 @@ export const CardProfileStudent = () => {
       stroke-width="2"
       stroke-linecap="round"
       stroke-linejoin="round"
-      class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-down"
+      class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-down w-8 h-8"
     >
       <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M6 9l6 6l6 -6" />
@@ -45,7 +45,7 @@ export const CardProfileStudent = () => {
       stroke-width="2"
       stroke-linecap="round"
       stroke-linejoin="round"
-      class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-up"
+      class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-up w-8 h-8"
     >
       <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M6 15l6 -6l6 6" />
@@ -75,14 +75,14 @@ export const CardProfileStudent = () => {
         {/* Tombol scroll atas */}
         <button
           onClick={() => scrollByAmount("up")}
-          className="z-10 mb-4 px-4 py-2 bg-white/10 text-white rounded-full hover:bg-white/20"
+          className="z-10 mb-4  w-[48px] h-[48px] border flex items-center justify-center bg-white/10 text-white rounded-full hover:bg-white/20"
         >
           {btnUp}
         </button>
         {/* Tombol scroll bawah */}
         <button
           onClick={() => scrollByAmount("down")}
-          className="z-10 mt-4 px-4 py-2 w-[48px] h-[48px] bg-white/10 text-white rounded-full hover:bg-white/20"
+          className="z-10   w-[48px] h-[48px] border flex items-center justify-center bg-white/10 text-white rounded-full hover:bg-white/20"
         >
           {btnDown}
         </button>
@@ -92,7 +92,7 @@ export const CardProfileStudent = () => {
 
       <div
         ref={scrollRef}
-        className="grid grid-cols-4 gap-3 w-max overflow-y-hidden max-h-[600px] scroll-smooth relative"
+        className="grid grid-cols-4 gap-3 w-max overflow-y-hidden  max-h-[600px] scroll-smooth relative"
       >
         {studentsData.map((student) => (
           <div
