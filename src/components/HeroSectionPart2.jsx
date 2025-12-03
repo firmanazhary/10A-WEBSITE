@@ -6,7 +6,7 @@ import "../index.css";
 
 export default function HeroSectionPart2() {
   return (
-    <section className="h-screen relative z-20">
+    <section className="h-screen relative z-20 overflow-x-hidden">
       <div className="pl-[62px] pt-[62px] pb-[62px]">
         <h1 className="font-vietnam text-white font-black text-[9vh]">
           WE ARE
@@ -60,26 +60,29 @@ export default function HeroSectionPart2() {
       <img
         src={gambar}
         alt="img"
-        className="absolute -bottom-[140px] -left-20 inline-block w-[380px] h-[480px] object-cover rounded-[30px] rotate-12"
+        className="absolute -bottom-[140px] -left-[120px] inline-block w-[350px] h-[380px] object-cover rounded-[30px] rotate-12"
       />
       <img
         src={gambar2}
         alt="img"
-        className="absolute -bottom-[140px] left-[200px] inline-block w-[410px] h-[500px] object-cover rounded-[30px]"
+        className="absolute -bottom-[140px] left-[165px] inline-block w-[370px] h-[380px] object-cover rounded-[30px]"
       />
       <img
         src={gambar4}
         alt="img"
-        className="z-[5] absolute -bottom-[180px] left-[550px] inline-block w-[420px] h-[500px] object-cover rounded-[30px] -rotate-6"
+        className="z-[5] absolute -bottom-[150px] left-[540px] inline-block w-[370px] h-[380px] object-cover rounded-[30px] -rotate-6"
       />
       <img
         src={gambar3}
         alt="img"
-        className="absolute -bottom-[140px] left-[900px] inline-block w-[380px] h-[480px] object-cover rounded-[30px] rotate-12"
+        className="absolute -bottom-[140px] left-[900px] inline-block w-[350px] h-[480px] object-cover rounded-[30px] rotate-12"
       />
       <div className="inline-block -right-7 absolute bg-white -rotate-[9deg] w-[380px] h-[430px] rounded-[30px]">
-        <p className="w-[200px] pb-5 text-[18px] font-vietnam font-bold">Don’t leave quickly! There’s lot more to explore, go scroll and</p>
-        <h1 className="font-vietnam font-black text-[30px] text-[#0A66C2] w-[220px]">EXPLORE OUR STORY ↓</h1>
+        <div className="pl-16 pt-44">
+           <p className="w-[200px] pb-5 text-[18px] font-vietnam font-bold">Don’t leave quickly! There’s lot more to explore, go scroll and</p>
+          <h1 className="font-vietnam font-black text-[30px] text-[#0A66C2] w-[220px]">EXPLORE OUR STORY ↓</h1>
+        </div>
+       
       </div>
     </section>
   );
