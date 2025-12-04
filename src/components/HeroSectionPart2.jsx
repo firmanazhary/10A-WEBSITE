@@ -6,7 +6,7 @@ import "../index.css";
 
 export default function HeroSectionPart2() {
   return (
-    <section className="h-screen relative z-20 overflow-x-hidden">
+    <section className="h-screen relative z-20 overflow-x-hidden overflow-y-hidden">
        {/* hiasan latar belakang start*/}
       <div className="bg-[#FF9D00]/80 blur-3xl absolute -top-10 -left-[110px] rounded-full w-[306px] h-[306px]"></div>
       <div className="bg-[#FF9D00]/80 blur-3xl absolute top-[130px] right-[220px] rounded-full w-[306px] h-[306px]"></div>
