@@ -1,7 +1,7 @@
 import Telaga from "../assets/story/pelangi.webp";
-import Lulus from "../assets/story/lulus.webp";
 import Fest from "../assets/story/munfest.webp";
-import gktau from "../assets/story/sawah.webp";
+import Arabic from "../assets/story/b-arab.webp";
+import Presentasi from "../assets/story/bread-papas.webp"
 
 export default function MomenPenting() {
   return (
@@ -20,13 +20,13 @@ export default function MomenPenting() {
         </h1>
 
   {/* CARD 1 */}
-  <div className="row-start-1 col-start-1 h-auto rounded-xl flex flex-col items-center p-1">
+  <div className="row-start-1 col-start-1 h-auto rounded-xl flex flex-col p-1">
     <div className="w-[250px] flex justify-center items-center">
-      <img src={Telaga} alt="" className="grayscale rounded-none w-[250px] h-[250px] object-cover" />
+      <img src={Presentasi} alt="" className="grayscale rounded-none w-[250px] h-[250px] object-cover" />
     </div>
-    <div className="w-full mt-2 flex flex-col">
+    <div className="mt-2 flex flex-col w-[250px]">
       <p className="font-vietnam text-lg text-white text-left">
-        <span className="font-bold">Telaga Pelangi - </span>Jalan-jalan ke wisata Telaga Pelangi Payang
+        <span className="font-bold">Project TailwindCSS - </span>Project kelompok website pake TailwindCSS
       </p>
       <div className="mt-2">
         <button>
@@ -37,11 +37,11 @@ export default function MomenPenting() {
   </div>
 
   {/* CARD 2 */}
-  <div className="row-start-2 col-start-2 h-auto rounded-xl flex flex-col items-center p-1 -mt-20">
+  <div className="row-start-2 col-start-2 h-auto rounded-xl flex flex-col p-1 -mt-20">
     <div className="w-[250px] flex justify-center items-center">
-      <img src={Lulus} alt="" className="grayscale rounded-none w-[250px] h-[250px] object-cover" />
+      <img src={Telaga} alt="" className="grayscale rounded-none w-[250px] h-[250px] object-cover" />
     </div>
-    <div className="w-full mt-2 flex flex-col">
+    <div className="mt-2 flex flex-col w-[250px]">
       <p className="font-vietnam text-lg text-white text-left">
         <span className="font-bold">Telaga Pelangi - </span>Jalan-jalan ke wisata Telaga Pelangi Payang
       </p>
@@ -54,13 +54,13 @@ export default function MomenPenting() {
   </div>
 
   {/* CARD 3 */}
-  <div className="row-start-1 col-start-4 h-auto rounded-xl flex flex-col items-cente p-1">
+  <div className="row-start-1 col-start-4 h-auto rounded-xl flex flex-col p-1">
     <div className="w-[250px] flex justify-center items-center">
-      <img src={Fest} alt="" className="grayscale rounded-none w-[250px] h-[250px] object-cover" />
+      <img src={Presentasi} alt="" className="grayscale rounded-none w-[250px] h-[250px] object-cover" />
     </div>
-    <div className="w-full mt-2 flex flex-col">
+    <div className="mt-2 flex flex-col w-[250px]">
       <p className="font-vietnam text-lg text-white text-left">
-        <span className="font-bold">Telaga Pelangi - </span>Jalan-jalan ke wisata Telaga Pelangi Payang
+        <span className="font-bold">Bahasa Arab - </span>Hari terakhir belajar bahasa arab di kelas 9
       </p>
       <div className="mt-2">
         <button>
@@ -71,13 +71,13 @@ export default function MomenPenting() {
   </div>
 
   {/* CARD 4 */}
-  <div className="row-start-2 col-start-3 h-auto rounded-xl flex flex-col items-center p-1 -mt-20">
+  <div className="row-start-2 col-start-3 h-auto rounded-xl flex flex-col p-1 -mt-20">
     <div className="w-[250px] flex justify-center items-center">
-      <img src={gktau} alt="" className="grayscale rounded-none w-[250px] h-[250px] object-cover" />
+      <img src={Arabic} alt="" className="grayscale rounded-none w-[250px] h-[250px] object-cover" />
     </div>
-    <div className="w-full mt-2 flex flex-col">
+    <div className="mt-2 flex flex-col w-[250px]">
       <p className="font-vietnam text-lg text-white text-left">
-        <span className="font-bold">Telaga Pelangi - </span>Jalan-jalan ke wisata Telaga Pelangi Payang
+        <span className="font-bold">Project TailwindCSS - </span>Project kelompok website pake TailwindCSS
       </p>
       <div className="mt-2">
         <button>
