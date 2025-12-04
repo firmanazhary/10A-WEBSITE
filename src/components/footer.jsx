@@ -2,7 +2,7 @@ import { div } from "framer-motion/client";
 
 export default function Footer() {
   return (
-    <section className="flex flex-col justify-center items-center">
+    <section className="flex flex-col justify-center items-center overflow-x-hidden">
   
   {/* Logo Section */}
   <div className="flex flex-col items-center justify-center mb-10">
