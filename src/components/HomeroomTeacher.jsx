@@ -5,57 +5,53 @@ import ustadz from "../assets/story/ustd.webp"
 export default function HomeroomTeacher() {
     return (
         <section>
-<div style={{
-      backgroundImage: `url(${bgSection})`,
-      backgroundPosition: "-57.542px -377.992px",
-      backgroundSize: "146.635% 165.417%",
-      backgroundRepeat: "no-repeat",
-}} className='w-[94vw] h-[110vh] flex flex-row py-10 px-10 gap-10 relative rounded-[50px] mx-auto my-20'>
-     <div className="absolute inset-0 bg-[#0A66C2]/50 opacity-40 rounded-[50px]"></div>
-<div className='relative h-full w-1/2 flex flex-col justify-center items-start gap-5 px-6'>
-    <div className='h-1/3 w-full'>
-      <p className='font-birthstone font-bold text-white text-4xl'>pelita penerang</p>
-      <p className='font-birthstone font-bold text-white text-5xl'>
-        our <span className='font-vietnam'>HOMEROOM TEACHER</span>
-      </p>
-    </div>
+          <div style={{
+                backgroundImage: `url(${bgSection})`,
+                backgroundPosition: "-57.542px -377.992px",
+                backgroundSize: "146.635% 165.417%",
+                backgroundRepeat: "no-repeat",
+          }} className='w-[94vw] h-[110vh] flex flex-row py-10 px-10 gap-10 relative rounded-[50px] mx-auto my-20'>
+              <div className="absolute inset-0 bg-[#0A66C2]/50 opacity-40 rounded-[50px]"></div>
+              <div className='relative h-full w-1/2 flex flex-col justify-center items-start gap-5 px-6'>
+                  <div className='h-1/3 w-full'>
+                    <p className='font-birthstone font-bold text-white text-4xl'>pelita penerang</p>
+                    <p className='font-birthstone font-bold text-white text-5xl'>
+                      our <span className='font-vietnam'>HOMEROOM TEACHER</span>
+                    </p>
+                  </div>
 
-    <div className='h-1/3 w-full flex flex-row gap-5'>
-      <div className='w-60 h-48 bg-slate-400'></div>
-      <div className='w-60 h-48 bg-slate-400'></div>
-    </div>
+                  <div className='h-1/3 w-full flex flex-row gap-5'>
+                    <div className='w-60 h-48 bg-slate-400'></div>
+                    <div className='w-60 h-48 bg-slate-400'></div>
+                  </div>
 
-    <div className='h-1/3 w-full'>
-      <p className='font-vietnam text-white text-sm  tracking-wider'>Hello! I am a Software Engineering student at Politeknik IDN, where I am deeply passionate about learning new technologies and enhancing my programming skills. I also work as an IT teacher, guiding students in web development and other IT-related subjects. As a Web Developer, I create functional and visually appealing websites. Alongside these roles, I take on freelance projects to further expand my experience in the tech industry</p>
-    </div>
-  </div>
+                  <div className='h-1/3 w-full'>
+                    <p className='font-vietnam text-white text-sm  tracking-wider'>Hello! I am a Software Engineering student at Politeknik IDN, where I am deeply passionate about learning new technologies and enhancing my programming skills. I also work as an IT teacher, guiding students in web development and other IT-related subjects. As a Web Developer, I create functional and visually appealing websites. Alongside these roles, I take on freelance projects to further expand my experience in the tech industry</p>
+                  </div>
+                </div>
+            <div className='relative min-h-[500px] w-1/2 flex flex-col justify-start items-end gap-44 px-6'>
+              <div className='text-right w-[400px]'>
+                <p className='text-white font-bold font-vietnam text-[140px] leading-none break-words'>FIRMAN</p>
+              </div>
 
-  <div>
-    <img src="" alt="" />
-  </div>
+              <div className='rotate-90 -mr-40'>
+                <p className='text-white font-bold font-vietnam text-[90px] leading-none'>AZHARY</p>
+              </div>
 
-  <div>
-    <div>
-      <p>FIRMAN</p>
-    </div>
+              <div>
+                <div className="flex gap-2">
+                  <img src="" alt="" />
+                  <img src="" alt="" />
+                  <img src="" alt="" />
+                </div>
+                <button></button>
+              </div>
+            </div>
 
-    <div>
-      <p>AZHARY</p>
-    </div>
+          </div>
 
-    <div>
-      <div>
-        <img src="" alt="" />
-        <img src="" alt="" />
-        <img src="" alt="" />
-      </div>
-      <button></button>
-    </div>
-  </div>
-</div>
-
-  
-</section>
+            
+        </section>
 
     );
 }
