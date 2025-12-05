@@ -5,7 +5,7 @@ import Presentasi from "../assets/story/bread-papas.webp"
 
 export default function MomenPenting() {
   return (
-    <section className="w-full px-5 py-10 relative flex flex-col h-auto bg-[#0A66C2]">
+    <section className="w-full px-5 py-10 relative flex flex-col h-auto bg-[#0A66C2] rounded-b-[100px]">
       <div
         className="absolute left-1/2 -translate-x-1/2 w-[500px] h-[750px] opacity-65 z-0 rounded-xl bg-cover bg-no-repeat grayscale"
         style={{ backgroundImage: `url(${Fest})` }}
