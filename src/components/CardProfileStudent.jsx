@@ -1,7 +1,21 @@
-import { useRef, useEffect } from "react";
+import { useRef, useEffect, useState } from "react";
 import { studentsData } from "../data/studenstData";
 
 export const CardProfileStudent = () => {
+const [hoverIndex, setHoverIndex] = useState(null);
+
+
+// pas di hover div putihnya translate y nya naik menuhin kartunya
+  const handleMouseEnter = () => {
+    setIsHovered(true);
+  };
+
+  const handleMouseLeave = () => {
+    setIsHovered(false);
+  };
+
+
+
   const scrollRef = useRef(null);
   const cardRef = useRef(null);
 
@@ -24,7 +38,7 @@ export const CardProfileStudent = () => {
     if (!container || !cardRef.current) return;
 
     const cardHeight = cardRef.current.offsetHeight;
-    const gap = 12;
+    const gap = 55;
     const scrollStep = cardHeight + gap;
     const maxScroll = container.scrollHeight - container.clientHeight;
 
@@ -80,8 +94,7 @@ export const CardProfileStudent = () => {
   );
 
   return (
-    <div className="bg-black max-h-[110vh] overflow-x-hidden overflow-y-visible relative flex flex-col items-center">
-
+    <div className="bg-black min-h-[110vh] overflow-x-hidden overflow-y-visible relative flex flex-col items-center">
       {/* background decorations */}
       <div className="bg-[#FF9D00]/60 blur-3xl absolute top-[100px] -left-[110px] rounded-full w-[306px] h-[306px]" />
       <div className="bg-[#FF9D00]/60 blur-3xl absolute bottom-[70px] -right-[110px] rounded-full w-[306px] h-[306px]" />
@@ -119,26 +132,39 @@ export const CardProfileStudent = () => {
         className="grid grid-cols-4 gap-3 w-max overflow-y-hidden max-h-[1000px] scroll-smooth relative pt-[250px]"
       >
         {studentsData.map((student, index) => (
-          <div
-            key={student.id}
-            ref={index === 0 ? cardRef : null}
-            className="w-[309px] h-[486px] bg-[radial-gradient(circle_at_bottom,_#0A66C2,_#085099,_#000000)] rounded-3xl mx-auto my-10 relative flex flex-col snap-start"
-          >
-            <img
-              src={student.photo}
-              alt={student.name}
-              className="w-full h-full object-center object-cover rounded-t-3xl"
-            />
-            <div className="p-4 flex flex-col gap-4 absolute bottom-0 bg-gradient-to-t from-black/70 to-transparent rounded-b-3xl">
-              <h3 className="text-2xl font-bold text-white font-vietnam">
-                {student.name}
-              </h3>
-              <p className="text-white text-sm font-vietnam -mt-1">
-                {student.quote}
-              </p>
-            </div>
-          </div>
-        ))}
+  <div
+    key={student.id}
+    ref={index === 0 ? cardRef : null}
+    onMouseEnter={() => setHoverIndex(index)}
+    onMouseLeave={() => setHoverIndex(null)}
+    className="w-[309px] h-[486px] bg-[radial-gradient(circle_at_bottom,_#0A66C2,_#085099,_#000000)] rounded-3xl mx-auto my-10 relative flex flex-col snap-start"
+  >
+    {/* isi default */}
+    <img
+      src={student.photo}
+      alt={student.name}
+      className="w-full h-full object-center object-cover rounded-t-3xl"
+    />
+
+    <div className="p-4 flex flex-col gap-4 absolute bottom-0 bg-gradient-to-t from-black/70 to-transparent rounded-b-3xl">
+      <h3 className="text-2xl font-bold text-white font-vietnam">
+        {student.name}
+      </h3>
+      <p className="text-white text-sm font-vietnam -mt-1">
+        {student.quote}
+      </p>
+    </div>
+
+    {/* overlay putih naik saat hover */}
+    <div
+      className={`bg-white h-full w-full absolute transition-all duration-300 rounded-3xl
+        ${hoverIndex === index ? "translate-y-0" : "translate-y-full"} ${
+        hoverIndex === index ? "opacity-100" : "opacity-0"} 
+      `}
+    ></div>
+  </div>
+))}
+
       </div>
     </div>
   );

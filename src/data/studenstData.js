@@ -1,7 +1,8 @@
-import baraka from "../assets/muka/baraka.webp";
-import bara from "../assets/muka/barra.webp";
+import baraka from "../assets/muka/baraka.svg";
+import bara from "../assets/muka/barra.svg";
 import faiz from "../assets/muka/faiz.webp";
-import fawwaz from "../assets/muka/fawwaz.webp";
+import fawwaz from "../assets/muka/fawwaz.svg";
+import albar from "../assets/muka/albar.svg";
 
 export const studentsData = [
   {
@@ -90,7 +91,7 @@ export const studentsData = [
     linkedin: "https://www.linkedin.com/in/albar-abdul-malik-364947364/",
     portfolio: "https://albarabdulm.vercel.app",
     github: "https://github.com/al4m-2068",
-    photo: faiz,
+    photo: albar,
     status: "osis",
   },{
     id: 1,
@@ -100,7 +101,7 @@ export const studentsData = [
     linkedin: "https://www.linkedin.com/in/albar-abdul-malik-364947364/",
     portfolio: "https://albarabdulm.vercel.app",
     github: "https://github.com/al4m-2068",
-    photo: faiz,
+    photo: albar,
     status: "osis",
   },{
     id: 1,
@@ -110,7 +111,7 @@ export const studentsData = [
     linkedin: "https://www.linkedin.com/in/albar-abdul-malik-364947364/",
     portfolio: "https://albarabdulm.vercel.app",
     github: "https://github.com/al4m-2068",
-    photo: faiz,
+    photo: albar,
     status: "osis",
   },{
     id: 1,
@@ -120,7 +121,7 @@ export const studentsData = [
     linkedin: "https://www.linkedin.com/in/albar-abdul-malik-364947364/",
     portfolio: "https://albarabdulm.vercel.app",
     github: "https://github.com/al4m-2068",
-    photo: faiz,
+    photo: albar,
     status: "osis",
   },{
     id: 1,
@@ -130,7 +131,7 @@ export const studentsData = [
     linkedin: "https://www.linkedin.com/in/albar-abdul-malik-364947364/",
     portfolio: "https://albarabdulm.vercel.app",
     github: "https://github.com/al4m-2068",
-    photo: faiz,
+    photo: albar,
     status: "osis",
   },{
     id: 1,
@@ -140,7 +141,7 @@ export const studentsData = [
     linkedin: "https://www.linkedin.com/in/albar-abdul-malik-364947364/",
     portfolio: "https://albarabdulm.vercel.app",
     github: "https://github.com/al4m-2068",
-    photo: faiz,
+    photo: albar,
     status: "osis",
   },{
     id: 1,
@@ -150,7 +151,7 @@ export const studentsData = [
     linkedin: "https://www.linkedin.com/in/albar-abdul-malik-364947364/",
     portfolio: "https://albarabdulm.vercel.app",
     github: "https://github.com/al4m-2068",
-    photo: faiz,
+    photo: albar,
     status: "osis",
   },{
     id: 1,
@@ -160,7 +161,7 @@ export const studentsData = [
     linkedin: "https://www.linkedin.com/in/albar-abdul-malik-364947364/",
     portfolio: "https://albarabdulm.vercel.app",
     github: "https://github.com/al4m-2068",
-    photo: faiz,
+    photo: albar,
     status: "osis",
   },{
     id: 1,
@@ -170,7 +171,7 @@ export const studentsData = [
     linkedin: "https://www.linkedin.com/in/albar-abdul-malik-364947364/",
     portfolio: "https://albarabdulm.vercel.app",
     github: "https://github.com/al4m-2068",
-    photo: faiz,
+    photo: albar,
     status: "osis",
   },
 ];
